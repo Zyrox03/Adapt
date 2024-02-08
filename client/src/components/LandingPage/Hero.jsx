@@ -1,3 +1,4 @@
+import hero_video from "../../assets/hero_video.mp4";
 export const Hero = () => {
   return (
     <section
@@ -6,7 +7,11 @@ export const Hero = () => {
     >
       {/* BLURS */}
 
-      <div className="gradient-con  " data-aos="zoom-in" data-aos-duration="3000">
+      <div
+        className="gradient-con  "
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+      >
         <div className="purple-gradient"></div>
         <div className="blue-gradient"></div>
         <div className="purple-gradient grad-5"></div>
@@ -29,10 +34,10 @@ export const Hero = () => {
         <button className="primary-gradient-button">BUY MEMBERSHIP</button>
       </div>
 
-      <div className="dashboard-wrap w-full lg:w-[60%] " style={{zIndex : 1}} >
+      <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
           <video autoPlay loop muted playsInline>
-            <source src="https://assets-global.website-files.com/64bc3e1a76f02c3a8cf863a2/651f4ccb914c11ca1702ca4a_Paytience_draft_2_glitch (1)-transcode.mp4" />
+            <source src={hero_video} />
           </video>
         </div>
 
