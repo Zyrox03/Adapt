@@ -21,7 +21,7 @@ export const Hero = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center gap-6 text-center">
-        <h1 className="hero-title text-4xl lg:text-7xl lg:max-w-[80%] uppercase">
+        <h1 className="hero-title text-3xl lg:text-5xl lg:max-w-[80%] uppercase">
           Generative Artificial Intelligence for Business Operations
         </h1>
 

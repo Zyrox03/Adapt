@@ -23,15 +23,16 @@ const LandingPage = () => {
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
 
-
       <div className="py-4 flex flex-col gap-12 ">
         <Hero />
         {/* <Benefits /> */}
-        <Pricings />
         {/* <AboutUs /> */}
         <TradingView />
         {/* <Reviews /> */}
         <Community />
+
+        <Pricings />
+
         <Contact />
       </div>
 

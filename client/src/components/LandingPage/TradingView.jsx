@@ -1,10 +1,10 @@
 export const TradingView = () => {
   return (
     <div className="flex gap-4 min-h-screen items-center ">
-      <div className="flex-1 relative w-full h-full">
+      <div className="flex-1 flex justify-center relative w-full h-full">
         <div
           style={{
-            width: "100%",
+            width: "70%",
             height: 0,
             paddingBottom: "100%",
             position: "relative",

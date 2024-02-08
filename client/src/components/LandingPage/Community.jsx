@@ -2,8 +2,8 @@ export const Community = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen gap-4 p-4 lg:p-12 ">
       <div className="w-full flex-1 ">
-        <div className="text-center lg:text-start space-y-12 lg:max-w-[70%] ">
-          <h2 className="h2-title "  data-aos="fade-up" data-aos-duration="1000">
+        <div className="text-center lg:text-start space-y-12 lg:max-w-[90%] ">
+          <h2 className="h2-title lg:text-start "  data-aos="fade-up" data-aos-duration="1000">
             Join A Thriving Built On{" "}
             <span className="gradient "> Community</span>
           </h2>

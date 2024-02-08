@@ -19,10 +19,10 @@ export const Contact = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
       >
-        <div className="flex-1 relative w-full h-full">
+        <div className="flex-1 flex justify-center relative w-full h-full">
           <div
             style={{
-              width: "100%",
+              width: "60%",
               height: 0,
               paddingBottom: "100%",
               position: "relative",
