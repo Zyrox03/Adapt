@@ -1,0 +1,26 @@
+[
+  {
+    "plan": "Monthly Plan",
+    "price": "99",
+    "period": "month",
+    "incentives": [
+      "All current & future premium trading indicators",
+      "VIP Discord chats & channels",
+      "A.I Trading Assistant",
+      "Trading alpha & alerts",
+      "Special giveaways, contests & more"
+    ]
+  },
+  {
+    "plan": "Yearly Plan",
+    "price": "949",
+    "period": "year",
+    "incentives": [
+      "All current & future premium trading indicators",
+      "VIP Discord chats & channels",
+      "A.I Trading Assistant",
+      "Trading alpha & alerts",
+      "Special giveaways, contests & more"
+    ]
+  }
+]
