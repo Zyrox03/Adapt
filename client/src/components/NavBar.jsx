@@ -1,20 +1,16 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import logo from "../assets/images/logo.webp";
 const NavBar = ({ toggleMobileNav }) => {
   return (
     <nav
-      className="py-2 px-12 h-24 flex items-center backdrop-blur-lg  w-full fixed top-0  "
+      className="py-2 px-8 lg:px-4 h-24 flex items-center backdrop-blur-lg  w-full fixed top-0  "
       style={{ zIndex: 2 }}
     >
       <div className="line"></div>
 
       <div className="flex-1 mr-auto">
-        <img
-          src="https://assets-global.website-files.com/64bc3e1a76f02c3a8cf863a2/64e922e75fe9fb2215fb850f_White%20Transparent-p-500.webp"
-          alt=""
-          className="max-w-20"
-        />
+        <img src={logo} alt="" className="max-w-72" />
       </div>
 
       <ul className="hidden lg:flex gap-12 flex-1 uppercase font-semibold text-sm">

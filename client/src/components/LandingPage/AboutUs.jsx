@@ -59,8 +59,8 @@ export const AboutUs = () => {
             style={{ backgroundColor: "rgba(255,255,255,.05)" }}
           >
             <h3
-              className="text-2xl font-semibold"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="text-2xl orbitron font-semibold"
+              
             >
               {title}
             </h3>

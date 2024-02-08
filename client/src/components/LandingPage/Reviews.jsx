@@ -64,8 +64,7 @@ export const Reviews = () => {
   return (
     <div className="flex flex-col gap-8 px-8 min-h-screen items-center  overflow-hidden">
       <h2
-        className="font-semibold text-4xl lg:text-5xl text-center"
-        style={{ fontFamily: "Syne, sans-serif" }}
+        className="font-semibold orbitron text-4xl lg:text-5xl text-center"
         data-aos="fade-up"
         data-aos-duration="2000"
       >

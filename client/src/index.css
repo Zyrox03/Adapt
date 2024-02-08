@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +10,7 @@
   --white-50: #ffffff80;
   --green: #4bd1ab;
   --dark-orchid: #ba27f6;
+  --teal: #1B9C85;
   --royal-blue: #446dff;
   --purple: #9991ed;
   --white-border: rgba(255, 255, 255, 0.2);
@@ -34,6 +34,7 @@
 
 body {
   background-color: black;
+  font-family: 'Space Mono', monospace;
   color: white;
 }
 
@@ -41,10 +42,15 @@ body {
   text-transform: capitalize;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Syne, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 45px;
   font-weight: 600;
   line-height: 1.1em;
+}
+
+.orbitron {
+  font-family: 'Orbitron', sans-serif;
+
 }
 
 .line {
@@ -64,8 +70,8 @@ body {
 }
 
 .hero-title {
-  font-family: "Russo One", sans-serif;
-  font-weight: 400;
+  font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
   line-height: 1.1em;
   font-size: 60px;
 }
@@ -73,8 +79,8 @@ body {
 .gradient {
   background-image: linear-gradient(
     135deg,
-    var(--cyan),
-    var(--dark-orchid) 61%
+    var(--white),
+    var(--teal) 61%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -88,7 +94,7 @@ body {
   background-image: linear-gradient(
     315deg,
     var(--royal-blue),
-    var(--dark-orchid)
+    var(--teal)
   );
   color: #fff;
   text-align: center;
@@ -229,7 +235,7 @@ body {
   min-height: 50px;
   color: #fff;
   background-color: transparent;
-  border: 1px solid #90f;
+  border: 1px solid var(--teal);
   border-radius: 12px;
   margin-bottom: 0;
   padding-top: 16px;
@@ -238,11 +244,11 @@ body {
   font-size: 17px;
   font-weight: 400;
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 0 0 20px rgba(153, 0, 255, 0.6);
+  box-shadow: 0 0 20px var(--teal);
 }
 
 .text-field:focus {
-  border-color: rgba(153, 0, 255, 0.5);
+  border-color: var(--cyan);
   padding-left: 24px;
   box-shadow: 0 0 20px rgba(153, 0, 255, 0);
 }
@@ -250,7 +256,7 @@ body {
 #footer {
   background-image: linear-gradient(
     135deg,
-    var(--dark-orchid) 15%,
+    var(--teal) 15%,
     var(--royal-blue)
   );
   text-align: center;
@@ -303,7 +309,7 @@ body {
 
   width: 250px;
   height: 250px;
-  background-color: var(--dark-orchid);
+  background-color: var(--teal);
   filter: blur(180px);
   border-radius: 100%;
   position: absolute;
@@ -333,7 +339,7 @@ body {
   height: 200px;
   filter: blur(150px);
   background-color: transparent;
-  background-image: linear-gradient(#90f, #e427a5);
+  background-image: linear-gradient(var(--white-50), var(--teal));
   top: auto;
   bottom: 27%;
   left: 9%;
@@ -346,7 +352,7 @@ body {
   background-color: transparent;
   background-image: linear-gradient(
     to top,
-    var(--dark-orchid) 36%,
+    var(--teal) 36%,
     var(--yellow)
   );
   filter: blur(200px);
@@ -388,12 +394,8 @@ body {
   width: 300px;
   height: 300px;
   background-color: transparent;
-  background-image: linear-gradient(
-    #90f 25%,
-    #086efc 49%,
-    #3f0efa 64%,
-    #90f 77%
-  );
+  background-image: linear-gradient(var(--white-50), var(--teal));
+
   top: auto;
   bottom: 26%;
   left: auto;
@@ -406,7 +408,7 @@ body {
   width: 250px;
   height: 250px;
   filter: blur(180px);
-  background-color: #90f;
+  background-color: var(--white-50);
   border-radius: 100%;
   position: absolute;
   top: 0%;
@@ -421,8 +423,8 @@ body {
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
-    var(--dark-orchid),
-    var(--dark-orchid)
+    var(--cyan),
+    var(--teal)
   );
   filter: blur(100px);
   top: auto;
@@ -458,7 +460,7 @@ body {
   background-image: linear-gradient(
     to bottom,
     var(--yellow),
-    var(--dark-orchid)
+    var(--teal)
   );
   filter: blur(150px);
   top: 60%;
@@ -473,7 +475,7 @@ body {
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
-    var(--dark-orchid) 40%,
+    var(--teal) 40%,
     var(--royal-blue) 75%,
     var(--yellow)
   );
@@ -510,7 +512,8 @@ body {
 
 .blue-gradient-2.g-33 {
   background-color: transparent;
-  background-image: linear-gradient(#3f0efa, #ff00c3 26%, #90f 65%, #3f0efa);
+    background-image: linear-gradient(var(--white-50), var(--teal));
+
   top: auto;
   bottom: -22%;
   left: auto;
@@ -519,7 +522,8 @@ body {
 
 .blue-gradient-2.g-34 {
   background-color: transparent;
-  background-image: linear-gradient(#3f0efa, #ff00c3 26%, #90f 65%, #3f0efa);
+    background-image: linear-gradient(var(--white-50), var(--teal));
+
   top: 20%;
   bottom: auto;
   left: 19%;
@@ -530,10 +534,10 @@ body {
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
-    var(--dark-orchid),
+    var(--teal),
     var(--yellow) 26%,
     var(--royal-blue) 65%,
-    var(--dark-orchid)
+    var(--teal)
   );
   top: auto;
   bottom: 0%;
@@ -546,7 +550,7 @@ body {
   background-image: linear-gradient(
     to bottom,
     var(--royal-blue),
-    var(--dark-orchid) 26%,
+    var(--teal) 26%,
     var(--yellow) 65%,
     var(--royal-blue)
   );

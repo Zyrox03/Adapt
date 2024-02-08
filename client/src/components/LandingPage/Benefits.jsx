@@ -1,4 +1,4 @@
-import benefits from "../../assets/benefits.json";
+// import benefits from "../../assets/benefits.json";
 
 export const Benefits = () => {
   return (
@@ -19,13 +19,47 @@ export const Benefits = () => {
       <div className=" min-h-screen w-full flex mt-12  ">
         <div className="flex-1">{/* STICKY THING */}</div>
 
-        <div className="lg:flex-1 lg:border-l border-white/25 flex flex-col gap-12 items-center w-full  ">
+        <div className="lg:flex-1  border-white/25 flex flex-col gap-12 items-center w-full  ">
           <div className="w-full h-full flex flex-col justify-center relative gap-12">
             <div className="gradient-con">
               <div className="purple-gradient grad-4"></div>
               <div className="blue-gradient grad-1"></div>
             </div>
 
+            <div className="text-center lg:text-start space-y-12 lg:max-w-[60%] ">
+              <h2
+                className="h2-title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                Built On <span className="gradient">The Best</span>
+              </h2>
+
+              <p
+                className="mt-6 text-p  "
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                Paytience Trading Indicators are designed for use on the
+                TradingView platform offering seamless integration for our
+                users.
+                <br />
+                <br />
+                Our TradingView account also provides our community with several
+                free open-source indicators.
+              </p>
+
+              <div
+                className="flex gap-4 justify-center lg:justify-start items-center mt-8"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <button className="secondary-gradient-button">
+                  VISIT OUR TRADINGVIEW
+                </button>
+              </div>
+            </div>
+            {/*         cd 
             {benefits.map(({ title, text }, index) => (
               <div
                 key={index}
@@ -56,7 +90,7 @@ export const Benefits = () => {
                   ></div>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

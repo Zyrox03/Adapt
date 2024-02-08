@@ -43,8 +43,7 @@ export const Community = () => {
           <div className="flex flex-col gap-4">
             <span
              data-aos="fade-right" data-aos-duration="2000"
-              className="font-semibold text-3xl"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="font-semibold text-3xl orbitron"
             >
               {" "}
               1.5M+
@@ -54,8 +53,7 @@ export const Community = () => {
           <div className="flex flex-col gap-4">
             <span
              data-aos="fade-right" data-aos-duration="2000"
-              className="font-semibold text-3xl"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="font-semibold text-3xl orbitron"
             >
               25K+
             </span>
@@ -64,8 +62,7 @@ export const Community = () => {
           <div className="flex flex-col gap-4">
             <span
              data-aos="fade-right" data-aos-duration="2000"
-              className="font-semibold text-3xl"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="font-semibold text-3xl orbitron"
             >
               100+
             </span>

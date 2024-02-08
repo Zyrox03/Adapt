@@ -14,8 +14,7 @@ export const Contact = () => {
       </div>
 
       <h2
-        className="font-semibold text-4xl lg:text-5xl text-center mb-12"
-        style={{ fontFamily: "Syne, sans-serif" }}
+        className="font-semibold orbitron text-4xl lg:text-5xl text-center mb-12"
         data-aos="fade-up" data-aos-duration="2000"
       >
         Have A Question Or Request?
@@ -42,9 +41,8 @@ export const Contact = () => {
 
             <div className="">
               <label
-                className="block  text-lg font-bold mb-6"
+                className="block orbitron text-lg font-bold mb-6"
                 htmlFor="message"
-                style={{ fontFamily: "Syne, sans-serif" }}
               >
                 Your Message
               </label>

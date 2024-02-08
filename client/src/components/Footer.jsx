@@ -19,11 +19,10 @@ const Footer = () => {
 
       {/* footer center */}
 
-      <div  className="footer-center text-start border-t border-b border-white/25">
+      <div  className="footer-center orbitron text-start border-t border-b border-white/25">
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="col-span-1 lg:flex lg:flex-col lg:items-center space-y-2 " data-aos="fade-up" data-aos-duration="2000">
+          <div className="col-span-1 lg:flex lg:flex-col   lg:items-start space-y-2 " data-aos="fade-up" data-aos-duration="2000">
             <h3
-              style={{ fontFamily: "Syne, sans-serif" }}
               className="text-2xl font-semibold"
             >
               Join Our Email List
@@ -46,7 +45,6 @@ const Footer = () => {
           </div>
           <div
             className="col-span-1 border-r border-white/25 pr-12"
-            style={{ fontFamily: "Syne, sans-serif" }}
           >
             <div className="grid grid-cols-3 lg:grid-cols-4">
               <div className="col-span-1" data-aos="fade-up" data-aos-duration="2000">

@@ -2,7 +2,7 @@ import plans from "../../assets/plans.json";
 export const Pricings = () => {
   return (
     <section className="flex flex-col gap-12 items-center relative ">
-      <div className="flex justify-around  gap-12 lg:gap-4 w-full flex-wrap"  data-aos="fade-up" data-aos-duration="1000">
+      <div className="flex justify-around gap-12 lg:gap-4 w-full flex-wrap"  data-aos="fade-up" data-aos-duration="1000">
         
 
         {plans.map(({ plan, price, period, incentives }, index) => (
@@ -11,7 +11,7 @@ export const Pricings = () => {
             className="pricing_card max-w-[90%] lg:max-w-[35%] flex flex-col items-center gap-12"
           >
             <div className="text-center flex flex-col gap-6">
-              <strong className="font-bold  text-4xl ">{plan} </strong>
+              <strong className="font-bold orbitron text-4xl ">{plan} </strong>
               <p className="text-3xl">
                 <span className="font-bold text-4xl mt-4">${price} </span> per{" "}
                 {period}

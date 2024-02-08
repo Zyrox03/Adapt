@@ -16,9 +16,8 @@ export const Hero = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center gap-6 text-center">
-        <h1 className="hero-title lg:max-w-[70%] ">
-          POWERFUL INDICATORS <br />
-          <span className="gradient ">TO ELEVATE YOUR TRADING</span>
+        <h1 className="hero-title  lg:max-w-[70%] ">
+          POWERFUL INDICATORS TO ELEVATE YOUR TRADING
         </h1>
 
         <p className="lg:max-w-[60%] text-p">
