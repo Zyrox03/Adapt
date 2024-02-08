@@ -2,7 +2,7 @@ import hero_video from "../../assets/hero_video.mp4";
 export const Hero = () => {
   return (
     <section
-      className="flex flex-col justify-center items-center gap-12 "
+      className="flex flex-col justify-center items-center gap-12 p-4"
       style={{ marginTop: "10rem" }}
     >
       {/* BLURS */}
@@ -21,17 +21,17 @@ export const Hero = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center gap-6 text-center">
-        <h1 className="hero-title  lg:max-w-[70%] ">
-          POWERFUL INDICATORS TO ELEVATE YOUR TRADING
+        <h1 className="hero-title text-4xl lg:text-7xl lg:max-w-[80%] uppercase">
+          Generative Artificial Intelligence for Business Operations
         </h1>
 
         <p className="lg:max-w-[60%] text-p">
-          Paytience is an all-inclusive indicator suite & trading membership
-          designed to elevate your trading and help you navigate the markets
-          more effectively.
+          Enhance operations, leverage data for strategic insights, and enhance
+          efficiency across your whole business processes providing
+          instantaneous support and forward momentum.
         </p>
 
-        <button className="primary-gradient-button">BUY MEMBERSHIP</button>
+        <button className="primary-gradient-button">Book a Demo</button>
       </div>
 
       <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>

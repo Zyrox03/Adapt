@@ -45,8 +45,7 @@ const Faq = () => {
           <h1
             data-aos="fade-up"
             data-aos-duration="2000"
-            className="hero-title lg:max-w-[70%]  "
-            style={{ fontFamily: "Syne, sans-serif" }}
+            className="hero-title orbitron  text-3xl lg:text-5xl lg:max-w-[70%]  "
           >
             Frequently Asked Questions{" "}
           </h1>
@@ -68,7 +67,7 @@ const Faq = () => {
             <div className=" w-full p-2 lg:w-[45%] overflow-hidden" key={index}>
               <div
                 className={`question select-none py-12 px-2 border-t border-white/25 flex items-center justify-between transition duration-300 ${
-                  showResponses[index] ? "text-purple-600" : ""
+                  showResponses[index] ? "text-teal-500" : ""
                 } cursor-pointer`}
                 onClick={() => toggleResponse(index)}
               >

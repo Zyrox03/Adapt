@@ -8,7 +8,7 @@ const Footer = () => {
     { icon: <i className="fa-brands fa-discord"></i>, link: "" },
   ];
   return (
-    <div id="footer" className="px-12 flex flex-col gap-8">
+    <footer id="footer" className="px-4 lg:px-12 flex flex-col gap-8">
       {/* Footer title */}
 
       <div className="flex jusitfy-center "  data-aos="fade-up" data-aos-duration="2000">
@@ -21,18 +21,18 @@ const Footer = () => {
 
       <div  className="footer-center orbitron text-start border-t border-b border-white/25">
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="col-span-1 lg:flex lg:flex-col   lg:items-start space-y-2 " data-aos="fade-up" data-aos-duration="2000">
+          <div className="col-span-1 lg:flex lg:flex-col text-center lg:text-start lg:items-start space-y-2 " data-aos="fade-up" data-aos-duration="2000">
             <h3
               className="text-2xl font-semibold"
             >
               Join Our Email List
             </h3>
-            <p className="text-p text-lg max-w-[80%]">
+            <p className="text-p text-lg w-full lg:max-w-[80%]">
               Be the first to know about essential news & updates sent directly
               to your inbox.
             </p>
 
-            <div className="w-1/2 relative border-b border-white/25">
+            <div className="lg:w-1/2 relative border-b border-white/25">
               <input
                 className="bg-transparent w-full text-white p-2 placeholder:text-white/50 focus:outline-none"
                 type="email"
@@ -44,10 +44,10 @@ const Footer = () => {
             </div>
           </div>
           <div
-            className="col-span-1 border-r border-white/25 pr-12"
+            className="col-span-1 lg:border-r border-white/25 lg:pr-12"
           >
-            <div className="grid grid-cols-3 lg:grid-cols-4">
-              <div className="col-span-1" data-aos="fade-up" data-aos-duration="2000">
+            <div className="grid grid-cols-2 gap-12 lg:grid-cols-4">
+              <div className="col-span-1 " data-aos="fade-up" data-aos-duration="2000">
                 <ul className="space-y-3">
                   <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
                     FEATURES
@@ -100,7 +100,7 @@ const Footer = () => {
       <div className="flex justify-between flex-col lg:flex-row gap-6 items-center text-p " data-aos="fade-up" data-aos-duration="2000">
         <p>© Paytience Indicators Inc. All Rights Reserved 2023. Licensing</p>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center flex-wrap justify-center">
           {socials.map(({ icon }, index) => (
             <div key={index} className="footer-socials">
               {icon}
@@ -129,7 +129,7 @@ This statement does not constitute our complete terms of service / disclaimer. W
         </p>
       </div>
 
-    </div>
+    </footer>
   );
 };
 

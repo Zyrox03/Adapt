@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
   return (
     <div
-      className={` h-screen  bg-black right-0 flex flex-col gap-8 fixed w-1/2 lg:hidden transition-transform duration-500
-    ${mobileNav ? "translate-x-0" : "translate-x-full ]]"}
+      className={` h-screen overflow-y-scroll bg-black py-4 shadow-lg right-0 flex flex-col gap-8 fixed w-3/4  lg:hidden transition-transform duration-500
+    ${mobileNav ? "translate-x-0" : "translate-x-full"}
     `}
       style={{ zIndex: 2 }}
     >
@@ -16,8 +16,8 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
         ></i>
       </div>
 
-      <ul className=" flex flex-col px-8 lg:hidden gap-8 uppercase font-semibold text-sm">
-        <Link to="/">
+      <ul className=" flex flex-col px-8 lg:hidden gap-8 uppercase font-semibold text-xs text-center">
+      <Link to="/">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
             Home
           </li>
@@ -25,24 +25,27 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
 
         <Link to="/faq">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Faq
+            FAQ
           </li>
         </Link>
 
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Feature
-        </li>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Pricing
+          Services
         </li>
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Learn
         </li>
-        <Link to="/reviews">
-          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Reviews
-          </li>
-        </Link>
+
+        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+          Careers
+        </li>
+        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+          Pricing
+        </li>
+
+        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+          Contact
+        </li>
       </ul>
 
       <div className="flex flex-col items-center gap-4">

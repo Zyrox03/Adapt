@@ -13,11 +13,11 @@ export const Pricings = () => {
             <div className="text-center flex flex-col gap-6">
               <strong className="font-bold orbitron text-4xl ">{plan} </strong>
               <p className="text-3xl">
-                <span className="font-bold text-4xl mt-4">${price} </span> per{" "}
+                <span className="font-bold lg:text-4xl mt-4">${price} </span> per{" "}
                 {period}
               </p>
 
-              <p className="gradient text-lg">
+              <p className="gradient text-md">
                 All-Inclusive Paytience Membership.
               </p>
             </div>
@@ -26,7 +26,7 @@ export const Pricings = () => {
                 Paytience Membership Includes:
               </p>
 
-              <ul className=" space-y-2 text-xl">
+              <ul className=" space-y-2 lg:text-xl">
                 {incentives.map((point, index) => (
                   <li key={index} className="flex items-center gap-3">
                     {" "}
@@ -36,7 +36,7 @@ export const Pricings = () => {
                 ))}
               </ul>
             </div>
-            <button className="primary- text-lg-button">BUY MEMBERSHIP</button>
+            <button className="primary-gradient-button text-lg-button">BUY MEMBERSHIP</button>
           </div>
         ))}
       </div>
@@ -47,11 +47,11 @@ export const Pricings = () => {
           <div className="purple-gradient-2 grad-35"></div>
         </div>
         
-      <img
+      {/* <img
         src="https://assets-global.website-files.com/64bc3e1a76f02c3a8cf863a2/655b7f24e04a3a504ab4621b_Group%2010.svg"
         className="w-96"
-        alt=""
-      />
+        alt="Safe Checkout image"
+      /> */}
     </section>
   );
 };

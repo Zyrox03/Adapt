@@ -43,6 +43,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Orbitron', sans-serif;
+  text-align: center;
   font-size: 45px;
   font-weight: 600;
   line-height: 1.1em;
@@ -73,7 +74,6 @@ body {
   font-family: 'Orbitron', sans-serif;
     font-weight: 700;
   line-height: 1.1em;
-  font-size: 60px;
 }
 
 .gradient {
@@ -649,7 +649,6 @@ body {
   min-height: 100%;
   border-radius: 12px;
   justify-content: center;
-  margin-top: 100px;
   display: flex;
   position: relative;
   overflow: hidden;
