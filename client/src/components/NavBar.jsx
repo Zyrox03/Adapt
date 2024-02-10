@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import logo from "../assets/images/logo.webp";
-
+import { Link as LinkScroll } from "react-scroll";
 const NavBar = ({ toggleMobileNav }) => {
   return (
     <nav
@@ -30,20 +30,26 @@ const NavBar = ({ toggleMobileNav }) => {
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Services
         </li>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Learn
-        </li>
+        <Link to="/learn">
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Learn
+          </li>
+        </Link>
 
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Careers
         </li>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Pricing
-        </li>
 
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Contact
-        </li>
+        <LinkScroll to="pricing" offset={-100} smooth>
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Pricing
+          </li>
+        </LinkScroll>
+        <Link to="/contact">
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Contact
+          </li>
+        </Link>
       </ul>
 
       <div className="hidden lg:flex gap-2 items-center flex-1 justify-end">

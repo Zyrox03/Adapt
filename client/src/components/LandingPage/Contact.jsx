@@ -1,3 +1,5 @@
+import ContactForm from "../../widgets/ContactForm";
+
 export const Contact = () => {
   return (
     <div className="flex flex-col gap-12 p-4 lg:p-12 min-h-screen relative">
@@ -15,11 +17,13 @@ export const Contact = () => {
         Have A Question Or Request?
       </h2>
       <div
-        className="flex my-auto gap-4 flex-wrap"
+        className="flex my-auto gap-4 flex-wrap-reverse items-end"
         data-aos="fade-up"
         data-aos-duration="3000"
+
       >
-        <div className="flex-1 flex justify-center relative w-full h-full">
+        <div className="flex-1 flex justify-center relative w-full h-full " 
+        >
           <div
             style={{
               width: "60%",
@@ -42,43 +46,8 @@ export const Contact = () => {
             ></iframe>
           </div>
         </div>
-        <div className="w-full  lg:w-[60%]">
-          <form className="shadow-md rounded flex flex-col gap-8">
-            <div className=" flex items-center gap-8 flex-wrap lg:flex-nowrap">
-              <input
-                className="text-field outline-none w-full "
-                id="name"
-                type="text"
-                placeholder="Your Name"
-              />
-
-              <input
-                className="text-field outline-none w-full "
-                id="email"
-                type="email"
-                placeholder="Your Email"
-              />
-            </div>
-
-            <div className="">
-              <label
-                className="block orbitron text-lg font-bold mb-6"
-                htmlFor="message"
-              >
-                Your Message
-              </label>
-              <textarea
-                className="text-field outline-none w-full h-60 "
-                id="message"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <div className="flex items-center justify-between">
-              <button className="primary-gradient-button w-full" type="button">
-                SUBMIT
-              </button>
-            </div>
-          </form>
+        <div className="w-full lg:w-[60%]">
+          <ContactForm />
         </div>
       </div>
     </div>

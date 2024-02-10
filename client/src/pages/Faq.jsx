@@ -14,7 +14,6 @@ const Faq = () => {
     setShowResponses(newShowResponses);
   };
 
-
   const [mobileNav, setMobileNav] = useState(false);
 
   const toggleMobileNav = () => {
@@ -25,16 +24,14 @@ const Faq = () => {
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
 
-      <div className="gradient-con-3 search-page" data-aos="zoom-in" data-aos-duration="3000">
-        <div
-          className="blue-gradient g-21"
-        ></div>
-        <div
-          className="blue-gradient g-22"
-        ></div>
-        <div
-          className="purple-gradient grad-24new"
-        ></div>
+      <div
+        className="gradient-con-3 search-page"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+      >
+        <div className="blue-gradient g-21"></div>
+        <div className="blue-gradient g-22"></div>
+        <div className="purple-gradient grad-24new"></div>
       </div>
 
       <div
@@ -60,9 +57,11 @@ const Faq = () => {
           </p>
         </div>
 
-        <hr className="border border-white/20 w-[80%]" />
-
-        <div className="flex flex-wrap gap-x-8 justify-center w-full ">
+        <div
+          className="flex flex-wrap gap-x-8 justify-center w-full "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           {faq.map(({ question, answer }, index) => (
             <div className=" w-full p-2 lg:w-[45%] overflow-hidden" key={index}>
               <div

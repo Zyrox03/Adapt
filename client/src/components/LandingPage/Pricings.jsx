@@ -1,7 +1,7 @@
 import plans from "../../assets/plans.json";
 export const Pricings = () => {
   return (
-    <section className="flex flex-col gap-12 items-center relative ">
+    <section className="flex flex-col gap-12 items-center relative " id="pricing">
       <div className="flex justify-around gap-12 lg:gap-4 w-full flex-wrap"  data-aos="fade-up" data-aos-duration="1000">
         
 

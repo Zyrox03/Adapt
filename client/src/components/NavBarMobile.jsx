@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Link as LinkScroll } from "react-scroll";
 
 const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
   return (
@@ -17,7 +18,7 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
       </div>
 
       <ul className=" flex flex-col px-8 lg:hidden gap-8 uppercase font-semibold text-xs text-center">
-      <Link to="/">
+        <Link to="/">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
             Home
           </li>
@@ -39,10 +40,12 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Careers
         </li>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Pricing
-        </li>
 
+        <LinkScroll to="pricing" offset={-100} smooth>
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Pricing
+          </li>
+        </LinkScroll>
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Contact
         </li>
@@ -64,8 +67,7 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
 
 export default NavBarMobile;
 
-
 NavBarMobile.propTypes = {
-    mobileNav : PropTypes.bool,
-    toggleMobileNav : PropTypes.func
-  };
+  mobileNav: PropTypes.bool,
+  toggleMobileNav: PropTypes.func,
+};

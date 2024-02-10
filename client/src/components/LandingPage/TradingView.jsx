@@ -32,8 +32,8 @@ export const TradingView = () => {
           <div className="purple-gradient-2 grad-18"></div>
         </div>
 
-        <div className="text-center  lg:text-start space-y-12 lg:max-w-[60%] ">
-          <h2 className="h2-title" data-aos="fade-up" data-aos-duration="1000">
+        <div className="text-center lg:text-start space-y-12 lg:max-w-[90%] ">
+          <h2 className="h2-title text-center lg:text-start" data-aos="fade-up" data-aos-duration="1000">
             Built On <span className="gradient">The Best</span>
           </h2>
 
