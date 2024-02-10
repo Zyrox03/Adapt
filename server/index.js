@@ -17,24 +17,13 @@ const openai = new OpenAI({
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
-);
-
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://adapt-4cb.pages.dev"); // update to match the domain you will make the request from
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+app.use(helmet());
 
 const corsOptions = {
   origin: "https://adapt-4cb.pages.dev",
 };
 
-app.options("*", cors(corsOptions)); // include before other routes
+cors(corsOptions);
 
 // Routes
 app.get("/", (req, res) => {

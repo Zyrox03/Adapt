@@ -119,13 +119,13 @@ const ContactForm = () => {
           className="block orbitron text-lg font-bold mb-6"
           htmlFor="message"
         >
-          Your Message
+          Ask us anything
         </label>
         <textarea
           disabled={formik.isSubmitting}
-          className="text-field outline-none w-full h-60"
+          placeholder="Ask us anything "
+          className="text-field outline-none w-full "
           name="message"
-          placeholder="Your Message"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.message}
@@ -191,10 +191,10 @@ const ContactForm = () => {
         leaveTo="opacity-0"
       >
         {() => (
-            <div
-              dangerouslySetInnerHTML={{ __html: assistantMessage }}
-              className=" p-4 text-field rounded "
-            ></div>
+          <div
+            dangerouslySetInnerHTML={{ __html: assistantMessage }}
+            className=" p-4 text-field rounded "
+          ></div>
         )}
       </Transition>
 
