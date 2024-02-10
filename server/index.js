@@ -20,11 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
-const corsOptions = {
-  origin: ["https://adapt-4cb.pages.dev", "https://www.adaptenterprise.tech", "http://localhost:3000"],
-};
 
-app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)) // include before other routes
 
 // Routes
 app.get("/", (req, res) => {
