@@ -19,12 +19,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 
-const corsOptions = {
-  origin: "https://adapt-4cb.pages.dev",
-};
 
-cors(corsOptions);
-app.options('*', cors()) // enable pre-flight request for DELETE request
+var whitelist = ['https://adapt-4cb.pages.dev/']
+var corsOptionsDelegate = function (req, callback) {
+  var corsOptions;
+  if (whitelist.indexOf(req.header('Origin')) !== -1) {
+    corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
+  } else {
+    corsOptions = { origin: false } // disable CORS for this request
+  }
+  callback(null, corsOptions) // callback expects two parameters: error and options
+}
+
+cors(corsOptionsDelegate)
+app.options('*', cors()) // include before other routes
 
 // Routes
 app.get("/", (req, res) => {
