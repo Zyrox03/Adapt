@@ -24,6 +24,7 @@ const corsOptions = {
 };
 
 cors(corsOptions);
+app.options('*', cors()) // enable pre-flight request for DELETE request
 
 // Routes
 app.get("/", (req, res) => {
