@@ -33,9 +33,12 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Services
         </li>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Learn
-        </li>
+
+        <LinkScroll to="pricing" offset={-100} smooth>
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Learn
+          </li>
+        </LinkScroll>
 
         <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
           Careers
@@ -46,9 +49,12 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
             Pricing
           </li>
         </LinkScroll>
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-          Contact
-        </li>
+
+        <Link to="/contact">
+          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Contact
+          </li>
+        </Link>
       </ul>
 
       <div className="flex flex-col items-center gap-4">

@@ -21,17 +21,20 @@ app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://adapt-4cb.pages.dev"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
 });
 
 const corsOptions = {
-  origin: ["https://adapt-4cb.pages.dev", "https://www.adaptenterprise.tech", "http://localhost:5173/"],
+  origin: "*",
 };
 
-app.options('*', cors(corsOptions)) // include before other routes
+app.options("*", cors(corsOptions)); // include before other routes
 
 // Routes
 app.get("/", (req, res) => {
