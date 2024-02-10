@@ -22,7 +22,7 @@ app.use(
 );
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", "https://adapt-4cb.pages.dev/"); // update to match the domain you will make the request from
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -31,7 +31,7 @@ app.use(function (req, res, next) {
 });
 
 const corsOptions = {
-  origin: "*",
+  origin: "https://adapt-4cb.pages.dev/",
 };
 
 app.options("*", cors(corsOptions)); // include before other routes
