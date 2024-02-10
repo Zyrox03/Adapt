@@ -7,10 +7,8 @@ const app = express();
 const port = 3000;
 require("dotenv").config();
 
-
 app.use(cors()); // Enable CORS for all origins
-app.options('*', cors()) // include before other routes
-
+app.options("*", cors()); // include before other routes
 
 const fs = require("fs");
 const OpenAI = require("openai");
@@ -18,24 +16,22 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-
 //
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 
-
-var whitelist = ['https://adapt-4cb.pages.dev/']
+var whitelist = ["https://adapt-4cb.pages.dev/"];
 var corsOptionsDelegate = function (req, callback) {
   var corsOptions;
-  if (whitelist.indexOf(req.header('Origin')) !== -1) {
-    corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
+  if (whitelist.indexOf(req.header("Origin")) !== -1) {
+    corsOptions = { origin: true }; // reflect (enable) the requested origin in the CORS response
   } else {
-    corsOptions = { origin: false } // disable CORS for this request
+    corsOptions = { origin: false }; // disable CORS for this request
   }
-  callback(null, corsOptions) // callback expects two parameters: error and options
-}
+  callback(null, corsOptions); // callback expects two parameters: error and options
+};
 
 // Routes
 app.get("/", (req, res) => {
@@ -125,7 +121,7 @@ const checkStatusAndPrintMessages = async (
   }
 };
 
-app.post("/gpt", async (req, res) => {
+app.post("/gpt", cors(), async (req, res) => {
   const { message, existingThreadId } = req.body;
   try {
     await createAssistantIfNeeded();
@@ -171,7 +167,7 @@ app.post("/gpt", async (req, res) => {
   }
 });
 
-app.post("/contact", async (req, res) => {
+app.post("/contact", cors(), async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
