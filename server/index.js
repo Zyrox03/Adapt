@@ -7,11 +7,17 @@ const app = express();
 const port = 3000;
 require("dotenv").config();
 
+
+app.use(cors()); // Enable CORS for all origins
+app.options('*', cors()) // include before other routes
+
+
 const fs = require("fs");
 const OpenAI = require("openai");
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
 
 //
 // Middleware
@@ -30,9 +36,6 @@ var corsOptionsDelegate = function (req, callback) {
   }
   callback(null, corsOptions) // callback expects two parameters: error and options
 }
-
-cors(corsOptionsDelegate)
-app.options('*', cors()) // include before other routes
 
 // Routes
 app.get("/", (req, res) => {
