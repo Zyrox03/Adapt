@@ -7,13 +7,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 require("dotenv").config();
 
-
 const fs = require("fs");
 const OpenAI = require("openai");
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
-
 
 //
 // Middleware
@@ -22,7 +20,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   helmet({ hsts: { maxAge: 31536000, includeSubDomains: true, preload: true } })
 );
-
 
 const corsOptions = {
   origin: "https://adapt-4cb.pages.dev",
@@ -48,7 +45,7 @@ const createAssistantIfNeeded = async () => {
 
     const myAssistant = await openai.beta.assistants.create({
       instructions:
-        "Your role is to assist customers with inquiries related to AdaptEnterprise products and services. Provide helpful and accurate information, address customer concerns, and ensure a positive experience. Be polite, professional, and empathetic in your interactions. and especially make the responses as short and concise as possible, no need for big paragraphs, make it max 4 sentences",
+        "To ensure concise responses, limit the length of each reply to a maximum of four sentences. Focus on providing helpful and accurate information to address customer inquiries about AdaptEnterprise products and services. Maintain a polite, professional, and empathetic tone in interactions with customers to ensure a positive experience. Avoid explicitly stating limitations or what the assistant cannot do; instead, prioritize offering solutions and assistance within the scope of its capabilities.",
       name: "AdaptEnterprise Support Bot",
       tools: [{ type: "retrieval" }],
       model: "gpt-3.5-turbo-1106",
