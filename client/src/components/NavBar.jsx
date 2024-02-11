@@ -45,16 +45,16 @@ const NavBar = ({ toggleMobileNav }) => {
             Pricing
           </li>
         </LinkScroll>
-        <Link to="/contact">
-          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Contact
-          </li>
-        </Link>
+      
       </ul>
 
       <div className="hidden lg:flex gap-2 items-center flex-1 justify-end">
-        <button className="secondary-gradient-button font-bold">Login</button>
-        <button className="primary-gradient-button font-bold">
+      <Link to='/contact'>
+        <button className="secondary-gradient-button font-bold w-[80%] ">
+          {" "}
+          Contact
+        </button>
+        </Link>        <button className="primary-gradient-button font-bold">
           Book a Demo
         </button>
       </div>

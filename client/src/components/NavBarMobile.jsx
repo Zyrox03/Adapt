@@ -50,18 +50,16 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
           </li>
         </LinkScroll>
 
-        <Link to="/contact">
-          <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Contact
-          </li>
-        </Link>
+       
       </ul>
 
       <div className="flex flex-col items-center gap-4">
-        <button className="secondary-gradient-button font-bold w-[80%] ">
+        <Link className="w-[80%]" to='/contact'>
+        <button className="secondary-gradient-button font-bold w-full ">
           {" "}
-          Login
+          Contact
         </button>
+        </Link>
         <button className="primary-gradient-button font-bold w-[80%] ">
           {" "}
           Buy Now
