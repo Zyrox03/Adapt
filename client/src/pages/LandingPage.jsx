@@ -1,13 +1,10 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
-// import { AboutUs } from "../components/LandingPage/AboutUs";
-// import { Benefits } from "../components/LandingPage/Benefits";
-import { Community } from "../components/LandingPage/Community";
+import { SectionRevolutionize } from "../components/LandingPage/SectionRevolutionize";
+import { SectionMomentum } from "../components/LandingPage/SectionMomentum";
 import { Contact } from "../components/LandingPage/Contact";
 import { Hero } from "../components/LandingPage/Hero";
-import { Pricings } from "../components/LandingPage/Pricings";
-// import { Reviews } from "../components/LandingPage/Reviews";
-import { TradingView } from "../components/LandingPage/TradingView";
+import { SectionState } from "../components/LandingPage/SectionState";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 
@@ -25,14 +22,9 @@ const LandingPage = () => {
 
       <div className="py-4 flex flex-col gap-12 ">
         <Hero />
-        {/* <Benefits /> */}
-        {/* <AboutUs /> */}
-        <TradingView />
-        {/* <Reviews /> */}
-        <Community />
-
-        <Pricings />
-
+        <SectionState />
+        <SectionRevolutionize />
+        <SectionMomentum />
         <Contact />
       </div>
 

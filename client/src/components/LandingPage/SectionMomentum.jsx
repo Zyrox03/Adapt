@@ -1,8 +1,8 @@
-export const TradingView = () => {
+export const SectionMomentum = () => {
   return (
     <div className="flex gap-4 min-h-screen items-center ">
       <div className="flex-1 flex justify-center relative w-full h-full">
-        <div
+        {/* <div
           style={{
             width: "70%",
             height: 0,
@@ -23,8 +23,7 @@ export const TradingView = () => {
             className="giphy-embed"
             allowFullScreen
           ></iframe>
-        </div>
-       
+        </div> */}
       </div>
       <div className="lg:flex-1 relative">
         <div className="gradient-con-2 banner blend">
@@ -33,8 +32,13 @@ export const TradingView = () => {
         </div>
 
         <div className="text-center lg:text-start space-y-12 lg:max-w-[90%] ">
-          <h2 className="h2-title text-center lg:text-start" data-aos="fade-up" data-aos-duration="1000">
-            Built On <span className="gradient">The Best</span>
+          <h2
+            className="h2-title text-center lg:text-start"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Automations with Forward
+            <span className="gradient">Momentum</span>
           </h2>
 
           <p
@@ -42,12 +46,13 @@ export const TradingView = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            Paytience Trading Indicators are designed for use on the TradingView
-            platform offering seamless integration for our users.
+            Experience constant, instantaneous support across all your
+            ecosystems, freeing up valuable time for other tasks.
             <br />
             <br />
-            Our TradingView account also provides our community with several
-            free open-source indicators.
+            Our chatbots are engineered for forward momentum, seamlessly guiding
+            customers to their end goals, from scheduling appointments to
+            completing checkout processes.
           </p>
 
           <div
@@ -56,7 +61,7 @@ export const TradingView = () => {
             data-aos-duration="3000"
           >
             <button className="secondary-gradient-button">
-              VISIT OUR TRADINGVIEW
+              Request a Demo
             </button>
           </div>
         </div>
