@@ -3,6 +3,7 @@ export const Hero = () => {
   return (
     <section
       className="flex flex-col justify-center items-center gap-12 p-4"
+      id="hero"
       style={{ marginTop: "10rem" }}
     >
       {/* BLURS */}

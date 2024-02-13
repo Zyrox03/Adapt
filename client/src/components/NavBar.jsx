@@ -11,7 +11,9 @@ const NavBar = ({ toggleMobileNav }) => {
       <div className="line"></div>
 
       <div className="flex-1 mr-auto">
-        <img src={logo} alt="" className="max-w-72" />
+        <Link to="/">
+          <img src={logo} alt="" className="max-w-72" />
+        </Link>
       </div>
 
       <ul className="hidden lg:flex gap-6 xl:gap-8 flex-1 uppercase font-semibold text-sm">
@@ -45,16 +47,16 @@ const NavBar = ({ toggleMobileNav }) => {
             Pricing
           </li>
         </LinkScroll>
-      
       </ul>
 
       <div className="hidden lg:flex gap-2 items-center flex-1 justify-end">
-      <Link to='/contact'>
-        <button className="secondary-gradient-button font-bold w-[80%] ">
-          {" "}
-          Contact
-        </button>
-        </Link>        <button className="primary-gradient-button font-bold">
+        <Link to="/contact">
+          <button className="secondary-gradient-button font-bold w-[80%] ">
+            {" "}
+            Contact
+          </button>
+        </Link>{" "}
+        <button className="primary-gradient-button font-bold">
           Book a Demo
         </button>
       </div>

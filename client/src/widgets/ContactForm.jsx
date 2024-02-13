@@ -91,7 +91,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="w-full shadow-md rounded flex flex-col gap-8"
+      className="w-full flex flex-col gap-8"
     >
       <div className="flex items-center justify-center gap-4 text-field">
         <label>Enable AI Responses</label>
