@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import logo from "../assets/images/logo.webp";
-import { Link as LinkScroll } from "react-scroll";
 import { useState } from "react";
 const NavBar = ({ toggleMobileNav }) => {
   const [showServices, setShowServices] = useState(false);
@@ -51,11 +50,11 @@ const NavBar = ({ toggleMobileNav }) => {
             </li>
           </Link>
 
-          <LinkScroll to="pricing" offset={-100} smooth>
+          <Link to="/pricing">
             <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
               Pricing
             </li>
-          </LinkScroll>
+          </Link>
         </ul>
 
         <div className="hidden lg:flex gap-2 items-center flex-1 justify-center">
@@ -65,9 +64,14 @@ const NavBar = ({ toggleMobileNav }) => {
               Contact
             </button>
           </Link>{" "}
+
+        <a target="__blank" href="https://calendly.com/adapt-ent/30min">
+
           <button className="primary-gradient-button font-bold">
             Book a Demo
           </button>
+        </a>
+
         </div>
 
         <i

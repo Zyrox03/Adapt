@@ -1,0 +1,24 @@
+[
+      {
+        "name": "Social media Chatbot",
+        "details": "2500 OTP + £125 retainer"
+      },
+      {
+        "name": "Website GPTs",
+        "plans": [
+          {
+            "name": "Growth",
+            "details": "4000 OTP + £250 retainer"
+          },
+          {
+            "name": "Enterprise",
+            "details": "Coming soon"
+          },
+          {
+            "name": "Custom",
+            "details": "Contact Us"
+          }
+        ]
+      }
+    ]
+  

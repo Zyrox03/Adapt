@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Link as LinkScroll } from "react-scroll";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 
@@ -36,37 +35,38 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
 
         <li
           onClick={() => setShowServices(!showServices)}
-          className={`transition duration-500 cursor-pointer hover:opacity-[0.5] ${showServices && 'text-teal-600'}`}
+          className={`transition duration-500 cursor-pointer hover:opacity-[0.5] ${
+            showServices && "text-teal-600"
+          }`}
         >
           Services
         </li>
 
         <Transition
-        show={showServices}
-        enter="transition-opacity duration-500"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-500"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        {() => (
-          <div className="flex flex-col gap-8">
-          <Link to="/website-chatbots">
-            <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Website chatbots              </li>
-          </Link>
-          <Link to="/social-media-inbox-chatbots">
-            <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
-            Social Media Inbox chatbots
-            </li>
-          </Link>
-        </div>
-        )}
-      </Transition>
-      
-         
-     
+          show={showServices}
+          enter="transition-opacity duration-500"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-500"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          {() => (
+            <div className="flex flex-col gap-8">
+              <Link to="/website-chatbots">
+                <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+                  Website chatbots{" "}
+                </li>
+              </Link>
+              <Link to="/social-media-inbox-chatbots">
+                <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+                  Social Media Inbox chatbots
+                </li>
+              </Link>
+            </div>
+          )}
+        </Transition>
+
         <Link to="/learn">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
             Learn
@@ -78,11 +78,11 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
           </li>
         </Link>
 
-        <LinkScroll to="pricing" offset={-100} smooth>
+        <Link to="/pricing">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
             Pricing
           </li>
-        </LinkScroll>
+        </Link>
       </ul>
 
       <div className="flex flex-col items-center gap-4">

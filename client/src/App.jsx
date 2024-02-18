@@ -9,6 +9,7 @@ import Careers from "./pages/Careers";
 import Terms from "./pages/policies/Terms";
 import Privacy from "./pages/policies/Privacy";
 import Refund from "./pages/policies/Refund";
+import Pricing from "./pages/Pricing";
 function App() {
   AOS.init({
     once: true,
@@ -22,6 +23,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/terms-services" element={<Terms />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/refund-policy" element={<Refund />} />

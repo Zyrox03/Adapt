@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import hero_video from "../../assets/hero_video.mp4";
 export const Hero = () => {
   return (
@@ -6,7 +5,7 @@ export const Hero = () => {
       className="flex flex-col justify-center items-center gap-12 p-4"
       id="hero"
       style={{ marginTop: "5rem" }}
-      >
+    >
       {/* BLURS */}
 
       <div
@@ -26,18 +25,17 @@ export const Hero = () => {
         <h1 className="hero-title text-3xl lg:text-5xl lg:max-w-[80%] uppercase">
           Generative Artificial Intelligence for Business Operations
         </h1>
-
         <p className="lg:max-w-[60%] text-p">
           Enhance operations, leverage data for strategic insights, and enhance
           efficiency across your whole business processes providing
           instantaneous support and forward momentum.
         </p>
-
-        <Link to="/contact">
-              <button className="primary-gradient-button">
-                Request a Demo
-              </button>
-            </Link>      </div>
+        <a target="__blank" href="https://calendly.com/adapt-ent/30min">
+          <button className="primary-gradient-button font-bold">
+            Book a Demo
+          </button>
+        </a>{" "}
+      </div>
 
       <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
