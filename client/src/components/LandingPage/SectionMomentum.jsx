@@ -2,7 +2,7 @@ export const SectionMomentum = () => {
   return (
     <div className="flex gap-4 min-h-screen items-center ">
       <div className="flex-1 flex justify-center relative w-full h-full">
-        {/* <div
+        <div
           style={{
             width: "70%",
             height: 0,
@@ -11,9 +11,8 @@ export const SectionMomentum = () => {
             pointerEvents: "none", // Disable pointer events on the container
           }}
         >
-          {" "}
           <iframe
-            src="https://giphy.com/embed/piYoJnSM5CLO8"
+            src="https://giphy.com/embed/0YwHADEH90Mjii6qHV"
             width="100%"
             height="100%"
             style={{
@@ -23,7 +22,8 @@ export const SectionMomentum = () => {
             className="giphy-embed"
             allowFullScreen
           ></iframe>
-        </div> */}
+        </div>
+      
       </div>
       <div className="lg:flex-1 relative">
         <div className="gradient-con-2 banner blend">
@@ -37,8 +37,7 @@ export const SectionMomentum = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Automations with Forward
-            <span className="gradient">Momentum</span>
+            Automations with Forward <span className="gradient">Momentum</span>
           </h2>
 
           <p

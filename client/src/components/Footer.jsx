@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const socials = [
     { icon: <i className="fa-brands fa-x-twitter"></i>, link: "" },
@@ -13,69 +15,54 @@ const Footer = () => {
 
       <div className="flex jusitfy-center "  data-aos="fade-up" data-aos-duration="2000">
         <h2 className="h2-title mx-auto lg:max-w-[60%]">
-          Powerful Indicators To Elevate Your Trading
-        </h2>
+        Strategic Integration of AI in Business Operations
+                </h2>
       </div>
 
       {/* footer center */}
 
       <div  className="footer-center orbitron text-start border-t border-b border-white/25">
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="col-span-1 lg:flex lg:flex-col text-center lg:text-start lg:items-start space-y-2 " data-aos="fade-up" data-aos-duration="2000">
-            <h3
-              className="text-2xl font-semibold"
-            >
-              Join Our Email List
-            </h3>
-            <p className="text-p text-lg w-full lg:max-w-[80%]">
-              Be the first to know about essential news & updates sent directly
-              to your inbox.
-            </p>
-
-            <div className="lg:w-1/2 relative border-b border-white/25">
-              <input
-                className="bg-transparent w-full text-white p-2 placeholder:text-white/50 focus:outline-none"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your e-mail"
-              />
-              <i className="absolute right-0 top-1  fa-solid fa-arrow-right bg-white text-purple-600 rounded-full p-[0.4em] transition cursor-pointer hover:shadow-xl duration-500 hover:-rotate-45"></i>
-            </div>
-          </div>
+        <div className="flex  gap-12">
+         
           <div
-            className="col-span-1 lg:border-r border-white/25 lg:pr-12"
+            className=" ml-auto "
           >
             <div className="grid grid-cols-2 gap-12 lg:grid-cols-4">
               <div className="col-span-1 " data-aos="fade-up" data-aos-duration="2000">
-                <ul className="space-y-3">
+                <ul className=" flex flex-col gap-3">
+                
+
+                  <Link to="/">
                   <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
-                    FEATURES
+                    HOME
                   </li>
-                  <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
-                    PRICING
-                  </li>
+                  </Link>
+                  <Link to="/contact">
                   <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
                     CONTACT
                   </li>
-                  <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
-                    MERCH
-                  </li>
+                  </Link>
+                  
                 </ul>
               </div>
               <div className="col-span-1" data-aos="fade-up" data-aos-duration="2000">
-                <ul className="space-y-3">
+                <ul className="flex flex-col gap-3">
+                <Link to="/learn">
+                  <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
+                    LEARN
+                  </li>
+                  </Link>
+
+                <Link to="/faq">
                   <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
                     FAQ
                   </li>
-                  <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
-                    TUTORIALS
-                  </li>
+                  </Link>
                 </ul>
               </div>
-              <div className="hidden lg:flex col-span-1"></div>
-              <div className="col-span-1" data-aos="fade-up" data-aos-duration="2000">
-                <ul className="space-y-3">
+              {/* <div className="hidden lg:flex col-span-1"></div> */}
+              <div className="col-span-2" data-aos="fade-up" data-aos-duration="2000">
+                <ul className="flex flex-col gap-3">
                   <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
                     TERMS OF SERVICE
                   </li>
@@ -92,13 +79,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
       {/* copyright */}
 
       <div className="flex justify-between flex-col lg:flex-row gap-6 items-center text-p " data-aos="fade-up" data-aos-duration="2000">
-        <p>© Paytience Indicators Inc. All Rights Reserved 2023. Licensing</p>
+        <p>© Adapt Enterprise Inc. All Rights Reserved 2024.</p>
 
         <div className="flex gap-4 items-center flex-wrap justify-center">
           {socials.map(({ icon }, index) => (
@@ -111,7 +99,7 @@ const Footer = () => {
 
       {/* risk disclaimer */}
 
-      <div>
+      {/* <div>
         <p className="text-xs text-start text-p">
 Trading involves substantial risk and many traders incur losses. The website of Paytience Indicators Inc., along with our products and services, are intended solely for informational and educational purposes. All content should be perceived as hypothetical, chosen retrospectively to showcase our products, and must not be interpreted as financial advice. Decisions regarding buying, selling, holding, or trading in securities, commodities, and other investments carry significant risk and should be made based on the advice of qualified financial professionals. Past performance is not indicative of future results.
 <br /><br />
@@ -127,7 +115,7 @@ This statement does not constitute our complete terms of service / disclaimer. W
 <br /><br />
 © 2023 Paytience Indicators Inc.
         </p>
-      </div>
+      </div> */}
 
     </footer>
   );

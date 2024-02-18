@@ -610,7 +610,7 @@ body {
 
 .line-4 {
   width: 1px;
-  height: 0%;
+  height: 100%;
   opacity: 0.4;
   background-image: linear-gradient(var(--white-50), var(--teal) 25%, var(--teal) 69%, var(--white-50));
   position: absolute;

@@ -1,3 +1,4 @@
+import automationGiphy from '../../assets/automationsGiphy.gif'
 export const SectionRevolutionize = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen gap-4 p-4 lg:p-12 ">
@@ -37,52 +38,19 @@ export const SectionRevolutionize = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex-1 flex flex-col items-center gap-8 relative">
+      <div className="w-full flex-1 flex flex-col items-center justify-center gap-8 relative">
         <div className="gradient-con-2 banner better-blend">
           <div className="purple-gradient-2 grad-16"></div>
           <div className="purple-gradient-2 grad-17"></div>
           <div className="purple-gradient-2 grad-18"></div>
         </div>
-        {/* 
+        
         <img
-          src="https://assets-global.website-files.com/64bc3e1a76f02c3a8cf863a2/65299f4079cbf4ed0721eb0f_Untitled-1-p-800.png"
+          src={automationGiphy}
           className="w-full max-w-96 object-cover"
           alt=""
-        /> */}
-        {/* 
-        <div className="flex gap-12 lg:gap-4 text-center lg:text-start lg:flex-row flex-col">
-          <div className="flex flex-col gap-4">
-            <span
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              className="font-semibold text-3xl orbitron"
-            >
-              {" "}
-              1.5M+
-            </span>
-            <p className="text-p ">Total reach on social platforms</p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <span
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              className="font-semibold text-3xl orbitron"
-            >
-              25K+
-            </span>
-            <p className="text-p ">Discord members in our servers</p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <span
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              className="font-semibold text-3xl orbitron"
-            >
-              100+
-            </span>
-            <p className="text-p ">Reviews from our community</p>
-          </div>
-        </div> */}
+        />
+       
       </div>
     </div>
   );

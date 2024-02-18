@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import Master_Guide_for_ChatGPT from '../assets/Master_Guide_for_ChatGPT.pdf'
-
+import book_video from '../assets/book_video.mp4'
 const Learn = () => {
  
 
@@ -59,6 +59,19 @@ const Learn = () => {
 
 </a>
         </div>
+
+        <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
+        <div className="dashboard">
+          <video autoPlay loop muted playsInline>
+            <source src={book_video} />
+          </video>
+        </div>
+
+        <div className="line-1"></div>
+        <div className="line-3-bottom"></div>
+        <div className="line-4"></div>
+        <div className="line-2-right"></div>
+      </div>
 
 
       </div>

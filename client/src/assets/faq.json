@@ -1,30 +1,26 @@
 [
   {
-    "question": "Do I need a paid TradingView subscription to use the indicators?",
-    "answer": "No! All of our indicators work on the FREE TradingView plan. Although we love the paid version of TradingView!"
+    "question": "How do Adapt Enterprise's GPT Solutions Work?",
+    "answer": "Adapt Enterprise's GPT solutions work through a three-step process: Training, Input, and Output. First, the AI is trained using your organization's data to build a comprehensive knowledge base. Then, users can ask questions or provide prompts as input. Finally, the AI generates accurate, factual, and relevant responses as output."
   },
   {
-    "question": "How do I get the indicators after purchasing?",
-    "answer": "After purchasing your membership, you will be redirected automatically to our welcome tutorial that will explain how to connect your accounts with the confirmation email you receive after purchasing. After connecting your Discord & TradingView account, you will have access to our indicators under the \"Invite-Only Scripts\" section in TradingView. You will also have VIP access to exclusive chats & channels in our Discord server."
+    "question": "What are the key features of Adapt Enterprise?",
+    "answer": "Adapt Enterprise offers seamless integration, allowing you to automate workflows and enhance scalability while reducing operational costs. Additionally, it provides effortless knowledge querying, enabling access to precise answers, insights, and reports from your organization's knowledge base."
   },
   {
-    "question": "Does this work for the stock market, forex & other markets?",
-    "answer": "Yes, our indicators are built for use on any chart for any market."
+    "question": "What are the advantages of using Adapt Enterprise's Enterprise GPT?",
+    "answer": "Adapt Enterprise's Enterprise GPT offers several advantages including time-saving automation of repetitive tasks, fast response times with 24/7 availability, access to quality content vetted through rigorous fact-checking methods, robust security measures, cost-saving through operational efficiencies, and instant deployment and scalability without extensive model training."
   },
   {
-    "question": "Can I pay with crypto?",
-    "answer": "Currently we are not offering subscription payments in cryptocurrency."
+    "question": "Why should businesses consider AI integration?",
+    "answer": "In today's dynamic marketplace, AI integration is a strategic imperative for businesses. AI solutions redefine efficiency by streamlining operations and revolutionizing customer service experiences. With chatbots seamlessly handling routine inquiries, human agents are liberated to focus on complex issues, leveraging their creativity, problem-solving prowess, and emotional intelligence to better serve customers."
   },
   {
-    "question": "Do I get the indicators forever?",
-    "answer": "You get access to our current & future indicators for as long as you pay your subscription. At the moment we do not offer any lifetime memberships. If you cancel your membership, you will lose access to the indicators at the end of the period."
+    "question": "What are the benefits of AI integration?",
+    "answer": "AI integration provides uninterrupted customer support without manual intervention, access to instant responses 24/7/365, significant savings in time, money, and energy compared to traditional methods, and eliminates the need for allocating unnecessary resources to deliver excellent service. However, notable risks include potential leaks of confidential information, which can be mitigated with proper implementation and testing."
   },
   {
-    "question": "Can I get a free trial of the indicators?",
-    "answer": "At the moment we do not offer any free trials."
-  },
-  {
-    "question": "Can I win every trade with these indicators?",
-    "answer": "No indicator, including Paytience's, can guarantee a win on every trade due to market unpredictability. Our indicators are thoughtfully designed and backtested, but remember, all trading carries inherent risks and a past performance doesn't predict future results."
+    "question": "What support and maintenance services does Adapt Enterprise offer?",
+    "answer": "Adapt Enterprise offers comprehensive support and maintenance services, including assistance with system maintenance and ensuring the chatbot remains online. They also provide free training sessions and support via email during specified hours. In cases where the AI cannot provide answers, customers can reach out for human support, although this is only necessary for a small percentage of inquiries."
   }
 ]
