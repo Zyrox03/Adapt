@@ -4,8 +4,8 @@ export const Hero = () => {
     <section
       className="flex flex-col justify-center items-center gap-12 p-4"
       id="hero"
-      style={{ marginTop: "10rem" }}
-    >
+      style={{ marginTop: "5rem" }}
+      >
       {/* BLURS */}
 
       <div

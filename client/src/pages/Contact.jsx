@@ -25,7 +25,7 @@ const ContactPage = () => {
       </div>
 
       <div
-        style={{ marginTop: "10rem" }}
+        style={{ marginTop: "5rem" }}
         className="flex  flex-col justify-center items-center gap-12 "
       >
         <div className="p-12 flex flex-col justify-center items-center gap-6 text-center">
@@ -52,7 +52,7 @@ const ContactPage = () => {
           data-aos-duration="2000"
           className="w-[90%] lg:w-[70%] "
         >
-          <ContactForm />
+          <ContactForm messageLabel='Ask us Anything' includesAI/>
         </div>
       </div>
 

@@ -3,8 +3,9 @@ import { Transition } from "@headlessui/react";
 import { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { Switch } from "@headlessui/react";
+import PropTypes from 'prop-types'
 import axios from "axios";
-const ContactForm = () => {
+const ContactForm = ({ includesAI, messageLabel }) => {
   const [showAIResponse, setShowAIResponse] = useState(false);
   const [formSuccessMessage, setFormSuccessMessage] = useState("");
   const [formErrorMessage, setFormErrorMessage] = useState("");
@@ -89,41 +90,40 @@ const ContactForm = () => {
   }, [showAIResponse]);
 
   return (
-    <form
-      onSubmit={formik.handleSubmit}
-      className="w-full flex flex-col gap-8"
-    >
-      <div className="flex items-center justify-center gap-4 text-field">
-        <label>Enable AI Responses</label>
-        <Switch
-          disabled={formik.isSubmitting}
-          checked={showAIResponse}
-          onChange={() => setShowAIResponse(!showAIResponse)}
-          className={`${
-            showAIResponse
-              ? "bg-teal-600"
-              : "bg-transparent border border-teal-600"
-          } relative inline-flex h-6 w-11 items-center rounded-full`}
-        >
-          <span className="sr-only">AI Response</span>
-          <span
+    <form onSubmit={formik.handleSubmit} className="w-full flex flex-col gap-8">
+      {includesAI && (
+        <div className="flex items-center justify-center gap-4 text-field">
+          <label>Enable AI Responses</label>
+          <Switch
+            disabled={formik.isSubmitting}
+            checked={showAIResponse}
+            onChange={() => setShowAIResponse(!showAIResponse)}
             className={`${
-              showAIResponse ? "translate-x-6" : "translate-x-1"
-            } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-          />
-        </Switch>
-      </div>
+              showAIResponse
+                ? "bg-teal-600"
+                : "bg-transparent border border-teal-600"
+            } relative inline-flex h-6 w-11 items-center rounded-full`}
+          >
+            <span className="sr-only">AI Response</span>
+            <span
+              className={`${
+                showAIResponse ? "translate-x-6" : "translate-x-1"
+              } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+            />
+          </Switch>
+        </div>
+      )}
 
       <div>
         <label
           className="block orbitron text-lg font-bold mb-6"
           htmlFor="message"
         >
-          Ask us anything
+          {messageLabel}{" "}
         </label>
         <textarea
           disabled={formik.isSubmitting}
-          placeholder="Ask us anything "
+          placeholder={messageLabel}
           className="text-field outline-none w-full "
           name="message"
           onChange={formik.handleChange}
@@ -223,3 +223,9 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+
+ContactForm.propTypes = {
+  includesAI : PropTypes.bool,
+  messageLabel : PropTypes.string 
+}

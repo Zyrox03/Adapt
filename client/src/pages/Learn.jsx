@@ -32,8 +32,8 @@ const Learn = () => {
       </div>
 
       <div
-        style={{ marginTop: "10rem" }}
-        className="flex min-h-[70vh] flex-col justify-center items-center gap-12 "
+        style={{ marginTop: "5rem" }}
+        className="flex min-h-[70vh] flex-col justify-center items-center gap-12 px-2 "
       >
         <div className="p-12 flex flex-col justify-center items-center gap-12 text-center">
           <h1

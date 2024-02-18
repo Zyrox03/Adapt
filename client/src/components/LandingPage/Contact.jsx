@@ -47,7 +47,7 @@ export const Contact = () => {
           </div>
         </div>
         <div className="w-full lg:w-[60%]">
-          <ContactForm />
+        <ContactForm messageLabel='Ask us Anything' includesAI/>
         </div>
       </div>
     </div>

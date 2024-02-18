@@ -1,7 +1,7 @@
 export const SectionMomentum = () => {
   return (
-    <div className="flex gap-4 min-h-screen items-center ">
-      <div className="flex-1 flex justify-center relative w-full h-full">
+    <div className="flex flex-col-reverse lg:flex-row  lg:gap-4 p-4 lg:p-12 min-h-screen items-center ">
+      <div className="lg:flex-1 flex justify-center relative w-full h-full">
         <div
           style={{
             width: "70%",

@@ -1,8 +1,8 @@
 import automationGiphy from '../../assets/automationsGiphy.gif'
 export const SectionRevolutionize = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen gap-4 p-4 lg:p-12 ">
-      <div className="w-full flex-1 ">
+    <div className="flex flex-col lg:flex-row min-h-screen gap-12 lg:gap-4 p-4 lg:p-12 ">
+      <div className="w-full lg:flex-1 ">
         <div className="text-center lg:text-start space-y-12 lg:max-w-[90%] ">
           <h2
             className="h2-title lg:text-start "
@@ -38,7 +38,7 @@ export const SectionRevolutionize = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex-1 flex flex-col items-center justify-center gap-8 relative">
+      <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-8 relative ">
         <div className="gradient-con-2 banner better-blend">
           <div className="purple-gradient-2 grad-16"></div>
           <div className="purple-gradient-2 grad-17"></div>
