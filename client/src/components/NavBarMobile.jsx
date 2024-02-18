@@ -92,10 +92,17 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
             Contact
           </button>
         </Link>
-        <button className="primary-gradient-button font-bold w-[80%] ">
-          {" "}
-          Buy Now
-        </button>
+
+        <a
+          target="__blank"
+          rel="noreferrer"
+          href="https://calendly.com/adapt-ent/30min"
+        >
+          <button className="primary-gradient-button font-bold w-[80%] ">
+            {" "}
+           Book Demo
+          </button>
+        </a>
       </div>
     </div>
   );

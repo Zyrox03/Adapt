@@ -65,7 +65,7 @@ const NavBar = ({ toggleMobileNav }) => {
             </button>
           </Link>{" "}
 
-        <a target="__blank" href="https://calendly.com/adapt-ent/30min">
+        <a target="__blank" rel="noreferrer" href="https://calendly.com/adapt-ent/30min">
 
           <button className="primary-gradient-button font-bold">
             Book a Demo

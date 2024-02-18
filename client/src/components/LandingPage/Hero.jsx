@@ -30,7 +30,7 @@ export const Hero = () => {
           efficiency across your whole business processes providing
           instantaneous support and forward momentum.
         </p>
-        <a target="__blank" href="https://calendly.com/adapt-ent/30min">
+        <a target="__blank" rel="noreferrer" href="https://calendly.com/adapt-ent/30min">
           <button className="primary-gradient-button font-bold">
             Book a Demo
           </button>
