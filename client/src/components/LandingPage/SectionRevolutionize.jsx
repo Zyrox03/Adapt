@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import automationGiphy from '../../assets/automationsGiphy.gif'
 export const SectionRevolutionize = () => {
   return (
@@ -32,9 +33,10 @@ export const SectionRevolutionize = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
+                      <Link to='/contact'>
             <button className="secondary-gradient-button">
               Revolutionize Your Operations Now!
-              </button>
+              </button>            </Link>
           </div>
         </div>
       </div>

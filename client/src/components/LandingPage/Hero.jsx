@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero_video from "../../assets/hero_video.mp4";
 export const Hero = () => {
   return (
@@ -32,8 +33,11 @@ export const Hero = () => {
           instantaneous support and forward momentum.
         </p>
 
-        <button className="primary-gradient-button">Book a Demo</button>
-      </div>
+        <Link to="/contact">
+              <button className="primary-gradient-button">
+                Request a Demo
+              </button>
+            </Link>      </div>
 
       <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const SectionMomentum = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row  lg:gap-4 p-4 lg:p-12 min-h-screen items-center ">
@@ -59,9 +61,11 @@ export const SectionMomentum = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <button className="secondary-gradient-button">
+          <Link to='/contact'>
+          <button className="secondary-gradient-button">
               Request a Demo
             </button>
+            </Link>
           </div>
         </div>
       </div>

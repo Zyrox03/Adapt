@@ -5,7 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { useState } from "react";
 const NavBar = ({ toggleMobileNav }) => {
   const [showServices, setShowServices] = useState(false);
-
+ 
   return (
     <div className="transition duration-500">
       <nav
@@ -33,7 +33,7 @@ const NavBar = ({ toggleMobileNav }) => {
           </Link>
 
           <li
-            className="transition duration-500 cursor-pointer hover:opacity-[0.5]  "
+            className={`transition duration-500 cursor-pointer hover:opacity-[0.5] ${showServices && 'text-teal-600'} `}
             onClick={() => setShowServices(!showServices)}
           >
             Services

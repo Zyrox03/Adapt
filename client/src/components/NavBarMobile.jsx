@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Link as LinkScroll } from "react-scroll";
+import { useState } from "react";
+import { Transition } from "@headlessui/react";
 
 const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
+  const [showServices, setShowServices] = useState(false);
+
   return (
     <div
       className={`h-screen overflow-y-scroll no-scrollbar bg-black py-4 shadow-lg right-0 flex flex-col gap-8 fixed w-3/4  lg:hidden transition-transform duration-500
@@ -30,10 +34,39 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
           </li>
         </Link>
 
-        <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+        <li
+          onClick={() => setShowServices(!showServices)}
+          className={`transition duration-500 cursor-pointer hover:opacity-[0.5] ${showServices && 'text-teal-600'}`}
+        >
           Services
         </li>
 
+        <Transition
+        show={showServices}
+        enter="transition-opacity duration-500"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-500"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        {() => (
+          <div className="flex flex-col gap-8">
+          <Link to="/website-chatbots">
+            <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Website chatbots              </li>
+          </Link>
+          <Link to="/social-media-inbox-chatbots">
+            <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
+            Social Media Inbox chatbots
+            </li>
+          </Link>
+        </div>
+        )}
+      </Transition>
+      
+         
+     
         <Link to="/learn">
           <li className="transition duration-500 cursor-pointer hover:opacity-[0.5]">
             Learn
