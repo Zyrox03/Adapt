@@ -7,6 +7,7 @@ import { Hero } from "../components/LandingPage/Hero";
 import { SectionState } from "../components/LandingPage/SectionState";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
+import { Helmet } from 'react-helmet';
 
 const LandingPage = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -39,6 +40,12 @@ const LandingPage = () => {
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
 
+      <Helmet>
+        <title>Adapt Enterprise - Generative AI for Business Operations</title>
+        <meta name="description" content="Adapt Enterprise offers state-of-the-art generative artificial intelligence solutions for enhancing business operations, leveraging data for strategic insights, and driving efficiency across all processes. Revolutionize your operations with our cutting-edge GPTS technology." />
+        <meta name="keywords" content="Adapt Enterprise, generative artificial intelligence, GPTS, business operations, efficiency, customer service, automation, chatbots" />
+        <meta name="author" content="Adapt Enterprise" />
+      </Helmet>
       <div className="py-4 flex flex-col gap-12 ">
         <Hero />
         <SectionState />

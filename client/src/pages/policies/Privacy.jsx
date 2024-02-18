@@ -2,6 +2,8 @@ import { useState } from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import NavBarMobile from "../../components/NavBarMobile";
+import { Helmet } from 'react-helmet';
+
 const Privacy = () => {
   const [mobileNav, setMobileNav] = useState(false);
 
@@ -13,7 +15,11 @@ const Privacy = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Privacy Policy - Adapt Enterprise</title>
+        <meta name="description" content="Read Adapt Enterprise's Privacy Policy to understand how we collect, use, and protect your personal information." />
+        <meta name="keywords" content="privacy policy, data protection, personal information, Adapt Enterprise" />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"

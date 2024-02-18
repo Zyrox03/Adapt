@@ -4,6 +4,8 @@ import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import Master_Guide_for_ChatGPT from '../assets/Master_Guide_for_ChatGPT.pdf'
 import book_video from '../assets/book_video.mp4'
+import { Helmet } from 'react-helmet';
+
 const Learn = () => {
  
 
@@ -18,7 +20,11 @@ const Learn = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Learn - Adapt Enterprise</title>
+        <meta name="description" content="Download our free ebook and learn more about generative artificial intelligence technology for business operations." />
+        <meta name="keywords" content="learn, ebook, download, Adapt Enterprise, artificial intelligence, business operations" />
+      </Helmet>
       <div className="gradient-con-3 search-page" data-aos="zoom-in" data-aos-duration="3000">
         <div
           className="blue-gradient g-21"

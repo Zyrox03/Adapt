@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
+import { Helmet } from 'react-helmet';
+
 import NavBarMobile from "../../components/NavBarMobile";
 const Refund = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -13,7 +15,11 @@ const Refund = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Refund Policy - Adapt Enterprise</title>
+        <meta name="description" content="Read Adapt Enterprise's Refund Policy to understand our refund process and eligibility criteria." />
+        <meta name="keywords" content="refund policy, refunds, Adapt Enterprise" />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"

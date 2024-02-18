@@ -2,6 +2,8 @@ import { useState } from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import NavBarMobile from "../../components/NavBarMobile";
+import { Helmet } from 'react-helmet';
+
 const Terms = () => {
   const [mobileNav, setMobileNav] = useState(false);
 
@@ -13,7 +15,11 @@ const Terms = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Terms of Service - Adapt Enterprise</title>
+        <meta name="description" content="Read Adapt Enterprise's Terms of Service to understand the terms and conditions governing the use of our website and services." />
+        <meta name="keywords" content="terms of service, terms and conditions, Adapt Enterprise" />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"

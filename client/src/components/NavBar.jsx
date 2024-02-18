@@ -8,7 +8,7 @@ const NavBar = ({ toggleMobileNav }) => {
   return (
     <div className="transition duration-500">
       <nav
-        className="py-2 pr-6 lg:px-4 h-[6em] flex items-center backdrop-blur-lg  w-full fixed top-0  "
+        className="py-2 px-6 lg:px-4 h-[6em] flex items-center backdrop-blur-lg  w-full fixed top-0  "
         style={{ zIndex: 3 }}
       >
         <div className="line-3-bottom"></div>

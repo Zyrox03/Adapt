@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import ContactForm from "../widgets/ContactForm";
+import { Helmet } from 'react-helmet';
+
 const Careers = () => {
   const [mobileNav, setMobileNav] = useState(false);
 
@@ -14,7 +16,11 @@ const Careers = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Careers - Adapt Enterprise</title>
+        <meta name="description" content="Explore career opportunities at Adapt Enterprise and join us in revolutionizing business operations with state-of-the-art generative artificial intelligence technology." />
+        <meta name="keywords" content="careers, jobs, employment, Adapt Enterprise, artificial intelligence, business operations" />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"

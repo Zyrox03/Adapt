@@ -2,6 +2,7 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
+import { Helmet } from "react-helmet";
 
 import pricingPlans from "../assets/pricing_plans.json";
 const Pricing = () => {
@@ -15,7 +16,17 @@ const Pricing = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>Pricing - Adapt Enterprise</title>
+        <meta
+          name="description"
+          content="Explore Adapt Enterprise's pricing plans for generative artificial intelligence solutions and choose the perfect plan for your business needs."
+        />
+        <meta
+          name="keywords"
+          content="pricing, plans, Adapt Enterprise, generative artificial intelligence, business solutions"
+        />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"

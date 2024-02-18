@@ -67,10 +67,19 @@ const Footer = () => {
                       LEARN
                     </li>
                   </Link>
-
                   <Link to="/faq">
                     <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
                       FAQ
+                    </li>
+                  </Link>
+                  <Link to="/pricing">
+                    <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
+                      PRICING
+                    </li>
+                  </Link>
+                  <Link to="/careers">
+                    <li className="hover:opacity-[0.6] transition duration-500 text-semibold cursor-pointer">
+                      CAREERS
                     </li>
                   </Link>
                 </ul>

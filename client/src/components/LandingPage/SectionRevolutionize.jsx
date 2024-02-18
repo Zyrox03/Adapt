@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
-import automationGiphy from '../../assets/automationsGiphy.gif'
+import { Link } from "react-router-dom";
+import automationGiphy from "../../assets/automationsGiphy.gif";
 export const SectionRevolutionize = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen gap-12 lg:gap-4 p-4 lg:p-12 ">
-      <div className="w-full lg:flex-1 ">
+      <div className="w-full lg:flex-1 flex items-center jusitfy-center ">
         <div className="text-center lg:text-start space-y-12 lg:max-w-[90%] ">
           <h2
             className="h2-title lg:text-start "
@@ -33,10 +33,11 @@ export const SectionRevolutionize = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-                      <Link to='/contact'>
-            <button className="secondary-gradient-button">
-              Revolutionize Your Operations Now!
-              </button>            </Link>
+            <Link to="/contact">
+              <button className="secondary-gradient-button">
+                Revolutionize Your Operations Now!
+              </button>{" "}
+            </Link>
           </div>
         </div>
       </div>
@@ -46,13 +47,12 @@ export const SectionRevolutionize = () => {
           <div className="purple-gradient-2 grad-17"></div>
           <div className="purple-gradient-2 grad-18"></div>
         </div>
-        
+
         <img
           src={automationGiphy}
-          className="w-full max-w-96 object-cover"
+          className="w-full max-w-80 lg:w-full object-cover"
           alt=""
         />
-       
       </div>
     </div>
   );

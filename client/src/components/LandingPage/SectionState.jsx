@@ -1,10 +1,11 @@
 
 export const SectionState = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row gap-12 lg:gap-4 p-4 lg:p-12 min-h-screen items-center ">
-      <div className="lg:flex-1 flex justify-center relative w-full h-full">
+    <div className="flex flex-col-reverse lg:flex-row lg:gap-12 lg:gap-4 p-4 lg:p-12 min-h-screen items-center ">
+      <div className="lg:flex-1 flex justify-center relative w-80 lg:w-full ">
         <div
-          style={{
+        className="max-w-80 "
+          style={{ 
             width: "70%",
             height: 0,
             paddingBottom: "100%",

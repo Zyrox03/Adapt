@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import faq from "../assets/faq.json";
 import NavBarMobile from "../components/NavBarMobile";
+import { Helmet } from 'react-helmet';
+
 const Faq = () => {
   const [showResponses, setShowResponses] = useState(
     Array(faq.length).fill(false)
@@ -23,7 +25,11 @@ const Faq = () => {
     <div className="min-h-screen flex flex-col gap-12">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
-
+      <Helmet>
+        <title>FAQ - Adapt Enterprise</title>
+        <meta name="description" content="Frequently Asked Questions about Adapt Enterprise's generative artificial intelligence solutions for business operations." />
+        <meta name="keywords" content="FAQ, frequently asked questions, Adapt Enterprise, artificial intelligence, business operations" />
+      </Helmet>
       <div
         className="gradient-con-3 search-page"
         data-aos="zoom-in"
