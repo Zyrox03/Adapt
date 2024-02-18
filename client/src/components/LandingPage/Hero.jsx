@@ -1,4 +1,4 @@
-import hero_video from "../../assets/hero_video.mp4";
+
 export const Hero = () => {
   return (
     <section
@@ -40,7 +40,7 @@ export const Hero = () => {
       <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
           <video autoPlay loop muted playsInline>
-            <source src={hero_video} />
+            <source src="https://res.cloudinary.com/duh30yscb/video/upload/v1708295159/hero_video_tf38qr.mp4" />
           </video>
         </div>
 

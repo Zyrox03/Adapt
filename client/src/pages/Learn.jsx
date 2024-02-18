@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import Master_Guide_for_ChatGPT from '../assets/Master_Guide_for_ChatGPT.pdf'
-import book_video from '../assets/book_video.mp4'
 import { Helmet } from 'react-helmet';
 
 const Learn = () => {
@@ -69,7 +68,7 @@ const Learn = () => {
         <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
           <video autoPlay loop muted playsInline>
-            <source src={book_video} />
+            <source src="https://res.cloudinary.com/duh30yscb/video/upload/v1708295153/book_video_zpht0r.mp4" />
           </video>
         </div>
 
