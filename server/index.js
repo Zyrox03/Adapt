@@ -22,7 +22,7 @@ app.use(
 );
 
 const corsOptions = {
-  origin: ["https://adapt-4cb.pages.dev","https://www.adaptenterprise.tech/"],
+  origin: "https://www.adaptenterprise.tech",
 };
 
 app.use(cors(corsOptions));
