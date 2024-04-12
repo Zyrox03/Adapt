@@ -68,7 +68,7 @@ const Learn = () => {
         <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
           <video autoPlay loop muted playsInline>
-            <source src="https://res.cloudinary.com/duh30yscb/video/upload/v1708295153/book_video_zpht0r.mp4" />
+            <source src="https://res.cloudinary.com/duaamobeu/video/upload/v1712937143/Adapt/book_xwsz7f.mp4" />
           </video>
         </div>
 

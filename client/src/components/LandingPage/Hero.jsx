@@ -40,7 +40,7 @@ export const Hero = () => {
       <div className="dashboard-wrap w-full lg:w-[60%] " style={{ zIndex: 1 }}>
         <div className="dashboard">
           <video autoPlay loop muted playsInline>
-            <source src="https://res.cloudinary.com/duh30yscb/video/upload/v1708295159/hero_video_tf38qr.mp4" />
+            <source src="https://res.cloudinary.com/duaamobeu/video/upload/v1712937148/Adapt/hero_kqmn3c.mp4" />
           </video>
         </div>
 
