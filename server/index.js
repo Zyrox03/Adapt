@@ -41,8 +41,8 @@ let assistantId; // Variable to store the assistant ID
 // Function to create the assistant if it doesn't exist
 const createAssistantIfNeeded = async () => {
   if (!assistantId) {
-    const fileId = await uploadFileAndGetId();
-
+    const fileId = process.env.FILEID;
+ 
     const myAssistant = await openai.beta.assistants.create({
       instructions:
         "To ensure concise responses, limit the length of each reply to a maximum of four sentences. Focus on providing helpful and accurate information to address customer inquiries about AdaptEnterprise products and services. Maintain a polite, professional, and empathetic tone in interactions with customers to ensure a positive experience. Avoid explicitly stating limitations or what the assistant cannot do; instead, prioritize offering solutions and assistance within the scope of its capabilities.",
@@ -59,18 +59,19 @@ const createAssistantIfNeeded = async () => {
 // Create the assistant when the application starts
 createAssistantIfNeeded();
 
-async function uploadFileAndGetId() {
-  try {
-    const file = await openai.files.create({
-      file: fs.createReadStream("adapt_assistant_file.json"),
-      purpose: "assistants",
-    });
-    return file.id;
-  } catch (error) {
-    console.error("Error uploading file:", error);
-    throw error;
-  }
-}
+// async function uploadFileAndGetId() {
+//   try {
+//     const file = await openai.files.create({ 
+//       file: fs.createReadStream("adapt_assistant_file.json"),
+//       purpose: "assistants",
+//     });
+//     console.log(file.id)
+//     return file.id;
+//   } catch (error) {
+//     console.error("Error uploading file:", error);
+//     throw error;
+//   }
+// }
 const checkStatusAndPrintMessages = async (
   threadId,
   runId,
@@ -245,5 +246,5 @@ app.post("/contact", async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server is listening, port : ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
