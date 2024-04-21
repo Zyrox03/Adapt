@@ -85,20 +85,31 @@ const NavBarMobile = ({ mobileNav, toggleMobileNav }) => {
         </Link>
       </ul>
 
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center w-full  gap-4">
         <Link className="w-[80%]" to="/contact">
           <button className="secondary-gradient-button font-bold w-full ">
             {" "}
             Contact
           </button>
         </Link>
+        <a
+          target="__blank"
+          rel="noreferrer"
+          className="w-[80%]"
+          href="https://calendly.com/adapt-ent/30min"          >
+          <button className="secondary-gradient-button font-bold w-full ">
+            {" "}
+            Get Tech Help
+          </button>
+        </a>
 
         <a
           target="__blank"
           rel="noreferrer"
+          className="w-[80%]"
           href="https://calendly.com/adapt-ent/30min"
         >
-          <button className="primary-gradient-button font-bold w-[80%] ">
+          <button className="primary-gradient-button font-bold w-full">
             {" "}
            Book Demo
           </button>

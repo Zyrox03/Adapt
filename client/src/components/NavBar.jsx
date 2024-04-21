@@ -8,11 +8,11 @@ const NavBar = ({ toggleMobileNav }) => {
   return (
     <div className="transition duration-500">
       <nav
-        className="py-2 px-6 lg:px-4 h-[6em] flex items-center backdrop-blur-lg  w-full fixed top-0  "
+        className="py-2 px-4 lg:pl-4 h-[6em] flex items-center backdrop-blur-lg  w-full fixed top-0  "
         style={{ zIndex: 3 }}
       >
         <div className="line-3-bottom"></div>
-        <div className="lg:flex-1 mr-auto  ">
+        <div className="lg:flex-1">
           <Link to="/">
             <img src={logo} alt="" className="max-w-72" />
           </Link>
@@ -57,13 +57,19 @@ const NavBar = ({ toggleMobileNav }) => {
           </Link>
         </ul>
 
-        <div className="hidden lg:flex gap-2 items-center flex-1 justify-center">
+        <div className="hidden lg:flex gap-2 items-center flex-1 justify-end">
           <Link to="/contact">
-            <button className="secondary-gradient-button font-bold w-[80%] ">
+            <button className="secondary-gradient-button font-bold  ">
               {" "}
               Contact
             </button>
           </Link>{" "}
+          <a target="__blank" rel="noreferrer" href="https://calendly.com/adapt-ent/30min">
+            <button className="secondary-gradient-button font-bold  ">
+              {" "}
+              Get Tech Help
+            </button>
+          </a>{" "}
 
         <a target="__blank" rel="noreferrer" href="https://calendly.com/adapt-ent/30min">
 
@@ -76,7 +82,7 @@ const NavBar = ({ toggleMobileNav }) => {
 
         <i
           onClick={toggleMobileNav}
-          className="lg:hidden cursor-pointer fa-solid fa-bars"
+          className="lg:hidden cursor-pointer fa-solid fa-bars ml-auto"
         ></i>
       </nav>
       <div

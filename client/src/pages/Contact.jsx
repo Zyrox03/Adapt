@@ -49,7 +49,7 @@ const ContactPage = () => {
             data-aos-duration="2000"
           >
             Get answers to some of the most common questions we get about
-            Paytience.
+            Adapt Ennterprises.
           </p>
         </div>
 

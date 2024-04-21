@@ -23,12 +23,11 @@ export const Hero = () => {
 
       <div className="flex flex-col justify-center items-center gap-6 text-center">
         <h1 className="hero-title text-3xl lg:text-5xl lg:max-w-[80%] uppercase">
-          Generative Artificial Intelligence for Business Operations
+        Generative Artificial Intelligence for Business Operations
         </h1>
         <p className="lg:max-w-[60%] text-p">
-          Enhance operations, leverage data for strategic insights, and enhance
-          efficiency across your whole business processes providing
-          instantaneous support and forward momentum.
+        Leverage AI customer support bots that have a variety of functions.
+
         </p>
         <a target="__blank" rel="noreferrer" href="https://calendly.com/adapt-ent/30min">
           <button className="primary-gradient-button font-bold">

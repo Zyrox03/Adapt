@@ -8,6 +8,9 @@ import { SectionState } from "../components/LandingPage/SectionState";
 import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import { Helmet } from 'react-helmet';
+import { AdoptionRate } from "../components/LandingPage/AdoptionRate";
+import { Compatibility } from "../components/LandingPage/Compatibility";
+import { Reviews } from "../components/LandingPage/Reviews";
 
 const LandingPage = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -36,13 +39,14 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col gap-12 overflow-hidden relative">
+    <div className="min-h-screen flex flex-col gap-1 overflow-hidden relative">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
 
       <Helmet>
         <title>Adapt Enterprise - Generative AI for Business Operations</title>
-        <meta name="description" content="Adapt Enterprise offers state-of-the-art generative artificial intelligence solutions for enhancing business operations, leveraging data for strategic insights, and driving efficiency across all processes. Revolutionize your operations with our cutting-edge GPTS technology." />
+        <meta name="title" content="Generative Artificial Intelligence for Business Operations" />
+        <meta name="description" content="Leverage AI customer support bots that have a variety of functions." />
         <meta name="keywords" content="Adapt Enterprise, generative artificial intelligence, GPTS, business operations, efficiency, customer service, automation, chatbots" />
         <meta name="author" content="Adapt Enterprise" />
       </Helmet>
@@ -52,6 +56,9 @@ const LandingPage = () => {
         <SectionRevolutionize />
         <SectionMomentum />
         <Contact />
+        <AdoptionRate/>
+        <Compatibility/>
+        <Reviews/>
       </div>
       
         <div

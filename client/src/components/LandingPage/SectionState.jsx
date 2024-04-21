@@ -1,11 +1,10 @@
-
 export const SectionState = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:gap-12 lg:gap-4 p-4 lg:p-12 min-h-screen items-center ">
+    <div className="flex flex-col-reverse lg:flex-row lg:gap-12 lg:gap-4 p-4 lg:p-12 lg:min-h-screen items-center ">
       <div className="lg:flex-1 flex justify-center relative w-80 lg:w-full ">
         <div
-        className="max-w-80 "
-          style={{ 
+          className="max-w-80 "
+          style={{
             width: "70%",
             height: 0,
             paddingBottom: "100%",
@@ -39,7 +38,7 @@ export const SectionState = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            State of <span className="gradient">the Art</span>
+            <span className="gradient">Customisable</span>
           </h2>
 
           <p
@@ -47,21 +46,18 @@ export const SectionState = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            Our GPTS represents the pinnacle of AI technology, delivering
-            unparalleled customer service through websites and social media with
-            cutting-edge responsiveness and accuracy.
-            <br />
-            <br />
-            It revolutionizes user experience, setting the standard for seamless
-            interaction and excellent customer service.
+            Tailor our AI solutions to fit your needs. From:
           </p>
 
           <div
-            className="flex gap-4 justify-center lg:justify-start items-center mt-8"
+            className="flex gap-4 pl-6 justify-start items-center mt-8"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            
+            <ul className="list-disc space-y-3 text-start">
+              <li>customizable designs to fit with your sites theme</li>
+              <li>personalised automation workflows</li>
+            </ul>
           </div>
         </div>
       </div>

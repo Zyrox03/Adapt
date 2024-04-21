@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
+
+import testi1 from '../../assets/images/testi1.jpg'
+import testi2 from '../../assets/images/testi2.jpg'
 
 export const Reviews = () => {
   useEffect(() => {
@@ -13,21 +15,9 @@ export const Reviews = () => {
 
       speed: 2000,
 
-      breakpoints: {
-        // When window width is <= 1023px
-        800: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1700: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
+      loop: true,
+
+     
       freeMode: {
         enabled: true,
         sticky: true,
@@ -62,44 +52,59 @@ export const Reviews = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-8 px-8 min-h-screen items-center  overflow-hidden">
+    <div className="flex flex-col gap-2 p-8 lg:min-h-screen items-center  overflow-hidden">
       <h2
         className="font-semibold orbitron text-4xl lg:text-5xl text-center"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
-        Reviews & Success Stories
+Client Testimonials
       </h2>
 
+
+      <p
+            className="mt-6 text-p  "
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+           Discover what our satisfied clients have to say about their experience with our AI solutions:
+
+(testimonials images)
+
+          </p>
+
       <div
-        className="reviews-swiper w-full"
+        className="reviews-swiper w-full mt-8"
         data-aos="fade-up"
         data-aos-duration="3000"
       >
         <div className="swiper-wrapper">
-          {Array.from({ length: 10 }, (_, index) => (
-            <div key={index} className="swiper-slide">
-              <div className="bg-purple-500 flex justify-center items-center w-96">
+        <div className="swiper-slide flex justify-center">
+              <div className="bg-purple-500 flex justify-center items-center max-w-lg lg:max-w-xl">
                 <img
-                  src="https://assets-global.website-files.com/64bc3e1b76f02c3a8cf863dc/65761841088f6cc99b6df8ff_PReview%203.png"
+                  src={testi1}
                   alt=""
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
-          ))}
+
+            <div className="swiper-slide flex justify-center">
+              <div className="bg-purple-500 flex justify-center items-center max-w-lg lg:max-w-xl">
+                <img
+                  src={testi2}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
         </div>
+
+        <div className="hidden lg:flex swiper-button-next"></div>
+        <div className="hidden lg:flex swiper-button-prev"></div>
       </div>
 
-      <Link to="/reviews">
-        <button
-          className="primary-gradient-button w-fit"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          View All
-        </button>
-      </Link>
+     
     </div>
   );
 };
