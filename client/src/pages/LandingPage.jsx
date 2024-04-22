@@ -39,7 +39,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col gap-1 overflow-hidden relative">
+    <div className="min-h-screen flex flex-col gap-1 overflow-hidden relative ">
       <NavBar toggleMobileNav={toggleMobileNav} />
       <NavBarMobile mobileNav={mobileNav} toggleMobileNav={toggleMobileNav} />
 
@@ -50,7 +50,7 @@ const LandingPage = () => {
         <meta name="keywords" content="Adapt Enterprise, generative artificial intelligence, GPTS, business operations, efficiency, customer service, automation, chatbots" />
         <meta name="author" content="Adapt Enterprise" />
       </Helmet>
-      <div className="py-4 flex flex-col gap-12 ">
+      <div className="py-4 flex flex-col gap-12 px-4 lg:px-8">
         <Hero />
         <SectionState />
         <SectionRevolutionize />

@@ -55,8 +55,9 @@ export const SectionState = () => {
             data-aos-duration="3000"
           >
             <ul className="list-disc space-y-3 text-start">
-              <li>customizable designs to fit with your sites theme</li>
-              <li>personalised automation workflows</li>
+              <li>Customizable designs to fit with your sites theme</li>
+              <li>Objective based prompt engineering</li>
+              <li>Personalised automation workflows</li>
             </ul>
           </div>
         </div>

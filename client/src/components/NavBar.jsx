@@ -57,7 +57,7 @@ const NavBar = ({ toggleMobileNav }) => {
           </Link>
         </ul>
 
-        <div className="hidden lg:flex gap-2 items-center flex-1 justify-end">
+        <div className="hidden lg:flex gap-4 items-center flex-1 justify-end">
           <Link to="/contact">
             <button className="secondary-gradient-button font-bold  ">
               {" "}

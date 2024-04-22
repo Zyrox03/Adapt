@@ -69,7 +69,6 @@ Client Testimonials
           >
            Discover what our satisfied clients have to say about their experience with our AI solutions:
 
-(testimonials images)
 
           </p>
 
@@ -81,7 +80,7 @@ Client Testimonials
         <div className="swiper-wrapper">
         <div className="swiper-slide flex justify-center">
               <div className="bg-purple-500 flex justify-center items-center max-w-lg lg:max-w-xl">
-                <img
+                <img  
                   src={testi1}
                   alt=""
                   className="w-full h-full object-cover"
